@@ -1,5 +1,12 @@
 {
   "name": "holamundo",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "8e9add05",
+  "hooks": {
+    "ionic:serve:before": "scripts/previo-al-despliegue.js",
+    "ionic:serve:after": "scripts/posterior-al-despliegue.js"
+  }
 }
